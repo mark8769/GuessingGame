@@ -1,2 +1,7 @@
 # Ignore mac dot files.
 *.DS_Store
+
+# Ignore node modules folder. (recommended, takes up a lot of space).
+# https://flaviocopes.com/should-commit-node-modules-git/
+node_modules/
+
