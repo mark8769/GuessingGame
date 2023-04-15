@@ -31,7 +31,11 @@ function redirect(){
         return;
     }
     let json = JSON.parse(localStorage.getItem("user"));
-    let user = json.user;
+    if (json){
+        var user = json.user;
+    }else{
+        var user = "";
+    }
     if (user != user_input){
         let obj = {
             "user": user_input,
@@ -40,7 +44,7 @@ function redirect(){
         localStorage.setItem("user", JSON.stringify(obj));
         window.open("game.html", target="_self");
     }else{
-        https://developer.mozilla.org/en-US/docs/Web/API/Window/open
+        //https://developer.mozilla.org/en-US/docs/Web/API/Window/open
         window.open("game.html", target="_self");
     }
 }
