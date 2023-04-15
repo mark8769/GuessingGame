@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Homepage</title>
+		<script src="game.js" defer></script>
+		<!-- JQuery library -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="flex-container">
+			<!-- start -->
+			<div class="flex-item"></div>
+			<!-- middle -->
+			<div class="flex-item">
+				<div class="main-container">
+					<div>
+						<label for="username">Enter your name:</label>
+						<input type="text" id="username" required>
+						<button id="submitUser">Submit</button>
+					</div>
+					<div>
+						<p hidden id="prevRecords">Previous records</p>
+						<!-- FIll in programatically with previous records in local storage -->
+					</div>
+				</div>
+			</div>
+			<!-- End -->
+			<div class="flex-item"></div>
+		</div>
+	</body>
+</html>
