@@ -17,10 +17,11 @@
 				<div class="main-container">
 					<div>
 						<label for="username">Enter your name:</label>
-						<input type="text" id="username">
+						<input type="text" id="username" required>
+						<button id="submitUser">Submit</button>
 					</div>
 					<div>
-						<p>Previous records</p>
+						<p hidden id="prevRecords">Previous records</p>
 						<!-- FIll in programatically with previous records in local storage -->
 					</div>
 				</div>
