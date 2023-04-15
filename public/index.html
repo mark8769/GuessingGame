@@ -1,9 +1,32 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Homepage</title>
-</head>
-<body>
-	<p>Hello from home</p>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Homepage</title>
+		<script src="game.js" defer></script>
+		<!-- JQuery library -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="flex-container">
+			<!-- start -->
+			<div class="flex-item"></div>
+			<!-- middle -->
+			<div class="flex-item">
+				<div class="main">
+					<div>
+						<label for="username">Enter username</label>
+						<input type="text" id="username">
+					</div>
+					<div>
+						<p>Previous records</p>
+						<!-- FIll in programatically with previous records in local storage -->
+					</div>
+				</div>
+			</div>
+			<!-- End -->
+			<div class="flex-item"></div>
+		</div>
+	</body>
 </html>
